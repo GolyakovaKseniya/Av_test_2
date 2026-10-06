@@ -20,6 +20,7 @@ def browser(request):
             {'intl.accept_languages': user_language}
         )
         browser = webdriver.Chrome(options=options)
+        
     elif browser_name == "firefox":
         fp = webdriver.FirefoxProfile()
         fp.set_preference("intl.accept_languages", user_language)
